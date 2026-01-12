@@ -6,7 +6,8 @@ import {
   PlusCircleOutlined,
   UnorderedListOutlined,
   BarChartOutlined,
-  TagsOutlined
+  TagsOutlined,
+  SmileOutlined
 } from '@ant-design/icons';
 import './Layout.css';
 
@@ -24,12 +25,12 @@ const Layout = ({ children }) => {
     {
       key: '/add',
       icon: <PlusCircleOutlined />,
-      label: <Link to="/add">记账</Link>
+      label: <Link to="/add">新增</Link>
     },
     {
-      key: '/records',
+      key: '/journals',
       icon: <UnorderedListOutlined />,
-      label: <Link to="/records">记录</Link>
+      label: <Link to="/journals">日记</Link>
     },
     {
       key: '/statistics',
@@ -37,16 +38,16 @@ const Layout = ({ children }) => {
       label: <Link to="/statistics">统计</Link>
     },
     {
-      key: '/categories',
+      key: '/tags',
       icon: <TagsOutlined />,
-      label: <Link to="/categories">分类</Link>
+      label: <Link to="/tags">标签</Link>
     }
   ];
 
   return (
     <AntLayout className="app-layout">
       <Header className="app-header">
-        <div className="logo">💰 记账本</div>
+        <div className="logo">📔 心情日记</div>
         <Menu
           theme="dark"
           mode="horizontal"
@@ -59,7 +60,7 @@ const Layout = ({ children }) => {
         <div className="content-wrapper">{children}</div>
       </Content>
       <Footer className="app-footer">
-        记账本应用 ©2026 - 数据存储在您的浏览器本地
+        心情日记 ©2026 - 数据存储在您的浏览器本地
       </Footer>
     </AntLayout>
   );

@@ -2,31 +2,34 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
-import { AppProvider } from './context/AppContext';
+import { MoodProvider } from './context/MoodContext';
 import Layout from './components/Layout/Layout';
-import Home from './pages/Home/Home';
-import AddRecord from './pages/AddRecord/AddRecord';
-import Records from './pages/Records/Records';
-import Statistics from './pages/Statistics/Statistics';
-import Categories from './pages/Categories/Categories';
+import MoodHome from './pages/Home/Home';
+import AddJournal from './pages/AddJournal/AddJournal';
+import JournalList from './pages/JournalList/JournalList';
+import JournalDetail from './pages/JournalDetail/JournalDetail';
+import MoodStatistics from './pages/MoodStatistics/MoodStatistics';
+import MoodTags from './pages/MoodTags/MoodTags';
 import './App.css';
 
 function App() {
   return (
     <ConfigProvider locale={zhCN}>
-      <AppProvider>
+      <MoodProvider>
         <Router>
           <Layout>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/add" element={<AddRecord />} />
-              <Route path="/records" element={<Records />} />
-              <Route path="/statistics" element={<Statistics />} />
-              <Route path="/categories" element={<Categories />} />
+              <Route path="/" element={<MoodHome />} />
+              <Route path="/add" element={<AddJournal />} />
+              <Route path="/edit/:id" element={<AddJournal />} />
+              <Route path="/journals" element={<JournalList />} />
+              <Route path="/journals/:id" element={<JournalDetail />} />
+              <Route path="/statistics" element={<MoodStatistics />} />
+              <Route path="/tags" element={<MoodTags />} />
             </Routes>
           </Layout>
         </Router>
-      </AppProvider>
+      </MoodProvider>
     </ConfigProvider>
   );
 }

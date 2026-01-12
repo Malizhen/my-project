@@ -1,0 +1,101 @@
+.mood-selector {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.mood-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 12px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  min-width: 80px;
+  position: relative;
+}
+
+.mood-item:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mood-item.active {
+  border-color: currentColor;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.mood-item.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.mood-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.mood-name {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.mood-color-indicator {
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .mood-selector {
+    gap: 12px;
+  }
+  
+  .mood-item {
+    min-width: 70px;
+    padding: 12px 8px;
+  }
+  
+  .mood-icon {
+    font-size: 28px;
+  }
+  
+  .mood-name {
+    font-size: 12px;
+  }
+  
+  .mood-color-indicator {
+    width: 20px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mood-selector {
+    gap: 8px;
+  }
+  
+  .mood-item {
+    min-width: 60px;
+    padding: 10px 6px;
+  }
+  
+  .mood-icon {
+    font-size: 24px;
+  }
+  
+  .mood-name {
+    font-size: 11px;
+  }
+}
