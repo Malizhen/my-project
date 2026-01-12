@@ -1,0 +1,64 @@
+.statistics-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.month-selector-card {
+  margin-bottom: 24px;
+}
+
+.month-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.chart-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  height: 300px;
+  margin-bottom: 24px;
+}
+
+.stats-list {
+  margin-top: 16px;
+}
+
+.stats-list h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 8px 0;
+  font-size: 16px;
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .month-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+}

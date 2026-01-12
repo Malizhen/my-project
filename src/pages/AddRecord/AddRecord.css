@@ -1,0 +1,37 @@
+.add-record-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-record-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-record-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.form-buttons button {
+  min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .add-record-page {
+    max-width: 100%;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+}

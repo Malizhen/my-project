@@ -1,0 +1,78 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.home-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+
+.month-title {
+  font-size: 18px;
+  color: #666;
+}
+
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.quick-action-card {
+  margin-bottom: 24px;
+}
+
+.quick-action-card h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  flex: 1;
+  min-width: 150px;
+}
+
+.empty-card,
+.summary-card {
+  margin-bottom: 24px;
+}
+
+.summary-card h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.summary-card p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 24px;
+  }
+
+  .month-title {
+    font-size: 16px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.records-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-card {
+  margin-bottom: 24px;
+}
+
+.records-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.record-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .record-amount {
+    font-size: 16px;
+  }
+}
