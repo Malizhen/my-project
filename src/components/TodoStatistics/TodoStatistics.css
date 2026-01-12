@@ -1,0 +1,44 @@
+.todo-statistics {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.stat-card .ant-card-body {
+  padding: 20px;
+}
+
+.completion-card .ant-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completion-rate {
+  text-align: center;
+}
+
+.rate-label {
+  font-size: 14px;
+  color: #595959;
+  margin-bottom: 12px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .stat-card .ant-card-body {
+    padding: 16px;
+  }
+
+  .completion-rate .ant-progress {
+    transform: scale(0.9);
+  }
+}

@@ -7,7 +7,8 @@ import {
   UnorderedListOutlined,
   BarChartOutlined,
   TagsOutlined,
-  SmileOutlined
+  SmileOutlined,
+  CheckSquareOutlined
 } from '@ant-design/icons';
 import './Layout.css';
 
@@ -21,6 +22,11 @@ const Layout = ({ children }) => {
       key: '/',
       icon: <HomeOutlined />,
       label: <Link to="/">首页</Link>
+    },
+    {
+      key: '/todos',
+      icon: <CheckSquareOutlined />,
+      label: <Link to="/todos">待办事项</Link>
     },
     {
       key: '/add',
