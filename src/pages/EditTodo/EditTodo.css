@@ -1,0 +1,31 @@
+.edit-todo-page {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 12px 0 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.form-container {
+  /* 表单容器 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .edit-todo-page {
+    padding: 16px;
+  }
+
+  .page-header h1 {
+    font-size: 20px;
+  }
+}

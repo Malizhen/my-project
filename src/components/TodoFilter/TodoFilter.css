@@ -1,0 +1,52 @@
+.todo-filter {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.filter-status {
+  margin-bottom: 16px;
+}
+
+.filter-status .ant-tabs-nav {
+  margin-bottom: 0;
+}
+
+.filter-options {
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-item label {
+  font-size: 14px;
+  color: #595959;
+  white-space: nowrap;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .todo-filter {
+    padding: 12px;
+  }
+
+  .filter-options {
+    padding-top: 8px;
+  }
+
+  .filter-item {
+    width: 100%;
+  }
+
+  .filter-item .ant-select {
+    flex: 1;
+    min-width: 0 !important;
+  }
+}
