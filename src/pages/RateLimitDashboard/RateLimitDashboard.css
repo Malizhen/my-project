@@ -1,0 +1,145 @@
+.rate-limit-dashboard {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: calc(100vh - 64px);
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.dashboard-tabs {
+  background: transparent;
+}
+
+.dashboard-tabs .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.dashboard-card {
+  height: 100%;
+}
+
+.dashboard-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dashboard-card .ant-card-body {
+  padding: 16px;
+}
+
+.dashboard-content {
+  width: 100%;
+}
+
+/* 概览卡片样式 */
+.overview-cards {
+  margin-bottom: 16px;
+}
+
+.overview-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.overview-card .ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+}
+
+.overview-card .ant-statistic-content {
+  font-size: 28px;
+}
+
+/* 表格样式 */
+.violations-table,
+.clients-table,
+.whitelist-table {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.table-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 图表容器 */
+.chart-container {
+  height: 300px;
+  position: relative;
+}
+
+/* 标签样式 */
+.client-type-tag {
+  min-width: 50px;
+  text-align: center;
+}
+
+.severity-tag {
+  min-width: 60px;
+  text-align: center;
+}
+
+/* 操作按钮 */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* 筛选器 */
+.filter-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-label {
+  color: #666;
+  font-size: 14px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .rate-limit-dashboard {
+    padding: 16px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 20px;
+  }
+  
+  .filter-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
