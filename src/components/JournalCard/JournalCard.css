@@ -1,0 +1,119 @@
+.journal-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.journal-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.journal-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.journal-mood {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mood-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.mood-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.journal-date {
+  font-size: 14px;
+  color: #999;
+}
+
+.journal-card-body {
+  margin-bottom: 12px;
+}
+
+.journal-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.journal-content-preview {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.journal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.journal-actions {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .journal-card {
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+  
+  .mood-icon {
+    font-size: 20px;
+  }
+  
+  .mood-name {
+    font-size: 14px;
+  }
+  
+  .journal-date {
+    font-size: 12px;
+  }
+  
+  .journal-title {
+    font-size: 15px;
+  }
+  
+  .journal-content-preview {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .journal-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .journal-actions .ant-space {
+    flex-wrap: wrap;
+  }
+  
+  .journal-actions .ant-btn {
+    font-size: 12px;
+  }
+}

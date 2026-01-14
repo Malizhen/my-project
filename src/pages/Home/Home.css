@@ -1,0 +1,87 @@
+.mood-home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.welcome-card {
+  text-align: center;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #5B9BD5 0%, #7BA8D9 100%);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.welcome-card h1 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.welcome-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.recent-journals {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-cards {
+  margin-top: 24px;
+}
+
+.info-card {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.info-card h3 {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.info-value {
+  font-size: 36px;
+  font-weight: 600;
+  color: #5B9BD5;
+}
+
+.info-text {
+  font-size: 18px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .mood-home-page {
+    padding: 16px 12px;
+  }
+  
+  .welcome-card h1 {
+    font-size: 24px;
+  }
+  
+  .welcome-card p {
+    font-size: 14px;
+  }
+  
+  .info-value {
+    font-size: 28px;
+  }
+  
+  .info-text {
+    font-size: 16px;
+  }
+}

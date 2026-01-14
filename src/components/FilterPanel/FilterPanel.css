@@ -1,0 +1,75 @@
+.filter-panel {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section:last-of-type {
+  margin-bottom: 24px;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.mood-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mood-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mood-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .filter-panel {
+    border-radius: 8px;
+  }
+  
+  .filter-section {
+    margin-bottom: 16px;
+  }
+  
+  .filter-label {
+    font-size: 13px;
+  }
+  
+  .mood-icon {
+    font-size: 18px;
+  }
+  
+  .filter-actions {
+    justify-content: center;
+  }
+  
+  .filter-actions .ant-space {
+    width: 100%;
+  }
+  
+  .filter-actions .ant-btn {
+    flex: 1;
+  }
+}

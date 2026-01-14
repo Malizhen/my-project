@@ -1,0 +1,64 @@
+.add-journal-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.add-journal-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.add-journal-card .ant-card-head {
+  background: linear-gradient(135deg, #5B9BD5 0%, #7BA8D9 100%);
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+}
+
+.add-journal-card .ant-card-head-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 32px;
+  padding: 8px;
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.tags-container:empty::after {
+  content: '暂无标签';
+  color: #999;
+  font-size: 14px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .add-journal-page {
+    padding: 16px 12px;
+  }
+  
+  .add-journal-card .ant-card-head-title {
+    font-size: 16px;
+  }
+  
+  .add-journal-card .ant-form-item-label > label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-journal-page {
+    padding: 12px 8px;
+  }
+  
+  .add-journal-card {
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 全局动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 页面过渡动画 */
+.page-enter {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 卡片动画 */
+.ant-card {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* 按钮悬停效果增强 */
+.ant-btn {
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ant-btn:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ant-btn-primary:not(:disabled):hover {
+  box-shadow: 0 4px 12px rgba(91, 155, 213, 0.4);
+}
+
+/* 输入框焦点效果 */
+.ant-input:focus,
+.ant-input-focused,
+.ant-picker:hover,
+.ant-picker-focused {
+  box-shadow: 0 0 0 2px rgba(91, 155, 213, 0.2);
+}
+
+/* Loading效果优化 */
+.ant-spin {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal动画优化 */
+.ant-modal {
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+/* Message提示优化 */
+.ant-message {
+  animation: slideInUp 0.3s ease-in-out;
+}
+
+/* 表格行悬停效果 */
+.ant-table-tbody > tr:hover > td {
+  background-color: rgba(91, 155, 213, 0.05) !important;
+}
+
+/* 标签悬停效果 */
+.ant-tag {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ant-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 页面加载骨架屏效果 */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton {
+  animation: shimmer 1.2s ease-in-out infinite;
+  background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-size: 800px 104px;
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 选中文本样式 */
+::selection {
+  background-color: rgba(91, 155, 213, 0.3);
+  color: #333;
+}
+
+/* 禁用状态样式优化 */
+.ant-btn:disabled,
+.ant-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* 响应式动画调整 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
