@@ -10,6 +10,7 @@ import JournalList from './pages/JournalList/JournalList';
 import JournalDetail from './pages/JournalDetail/JournalDetail';
 import MoodStatistics from './pages/MoodStatistics/MoodStatistics';
 import MoodTags from './pages/MoodTags/MoodTags';
+import RateLimitDashboard from './pages/RateLimitDashboard/RateLimitDashboard';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <Route path="/journals/:id" element={<JournalDetail />} />
               <Route path="/statistics" element={<MoodStatistics />} />
               <Route path="/tags" element={<MoodTags />} />
+              <Route path="/admin/rate-limit" element={<RateLimitDashboard />} />
             </Routes>
           </Layout>
         </Router>
