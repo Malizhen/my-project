@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页记事本</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 网页记事本</h1>
+            <div class="status" id="status">准备就绪</div>
+        </header>
+
+        <div class="toolbar">
+            <button id="clearBtn" class="btn btn-danger">清空</button>
+            <button id="downloadBtn" class="btn btn-primary">下载</button>
+            <div class="word-count">
+                字数: <span id="wordCount">0</span>
+            </div>
+        </div>
+
+        <textarea
+            id="notepad"
+            placeholder="开始输入内容...内容将自动保存到本地浏览器"
+            autofocus
+        ></textarea>
+
+        <footer>
+            <p>💡 提示：内容自动保存在浏览器本地存储中</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
